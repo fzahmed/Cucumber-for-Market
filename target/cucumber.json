@@ -1,0 +1,742 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-06-14T18:50:04.301Z",
+        "before": [
+          {
+            "result": {
+              "duration": 10940463000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginStepDef.beforerun()"
+            }
+          }
+        ],
+        "line": 15,
+        "name": "User should be able to login with valid credentials",
+        "description": "",
+        "id": "other-techfios-login-functionality-validation;user-should-be-able-to-login-with-valid-credentials;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 690045000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginStepDef.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 166964100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User is on the Techfios login page",
+            "match": {
+              "location": "LoginStepDef.user_is_on_the_techfios_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3107794500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User enters username as \"demo@techfios.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "demo@techfios.com",
+                  "offset": 25
+                }
+              ],
+              "location": "LoginStepDef.user_enters_username_as(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3085967600,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User enters passward as \"abc123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "abc123",
+                  "offset": 25
+                }
+              ],
+              "location": "LoginStepDef.user_enters_passward_as(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4473046900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User clicks on signin button",
+            "match": {
+              "location": "LoginStepDef.user_clicks_on_signin_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3478973600,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User should land on dashboard page",
+            "match": {
+              "location": "LoginStepDef.user_should_land_on_dashboard_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@otherlogin"
+          },
+          {
+            "name": "@Scenario"
+          },
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-06-14T18:50:30.277Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4358487500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginStepDef.beforerun()"
+            }
+          }
+        ],
+        "line": 16,
+        "name": "User should be able to login with valid credentials",
+        "description": "",
+        "id": "other-techfios-login-functionality-validation;user-should-be-able-to-login-with-valid-credentials;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 696721000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginStepDef.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 187659900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User is on the Techfios login page",
+            "match": {
+              "location": "LoginStepDef.user_is_on_the_techfios_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3096354100,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User enters username as \"demo2@techfios.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "demo2@techfios.com",
+                  "offset": 25
+                }
+              ],
+              "location": "LoginStepDef.user_enters_username_as(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3081024100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User enters passward as \"abc123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "abc123",
+                  "offset": 25
+                }
+              ],
+              "location": "LoginStepDef.user_enters_passward_as(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4260082900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User clicks on signin button",
+            "match": {
+              "location": "LoginStepDef.user_clicks_on_signin_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "junit.framework.ComparisonFailure: Dashboard page not found expected:\u003c[Dashboard]- iBilling\u003e but was:\u003c[Login ]- iBilling\u003e\r\n\tat junit.framework.Assert.assertEquals(Assert.java:100)\r\n\tat steps.LoginStepDef.user_should_land_on_dashboard_page(LoginStepDef.java:66)\r\n\tat ✽.User should land on dashboard page(classpath:features/Otherlogin.feature:11)\r\n",
+              "duration": 16495900,
+              "status": "failed"
+            },
+            "line": 11,
+            "name": "User should land on dashboard page",
+            "match": {
+              "location": "LoginStepDef.user_should_land_on_dashboard_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@otherlogin"
+          },
+          {
+            "name": "@Scenario"
+          },
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-06-14T18:50:45.988Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3308696200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginStepDef.beforerun()"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "User should be able to login with valid credentials",
+        "description": "",
+        "id": "other-techfios-login-functionality-validation;user-should-be-able-to-login-with-valid-credentials;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 761190200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginStepDef.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 178966600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User is on the Techfios login page",
+            "match": {
+              "location": "LoginStepDef.user_is_on_the_techfios_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3082905200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User enters username as \"demo@techfios.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "demo@techfios.com",
+                  "offset": 25
+                }
+              ],
+              "location": "LoginStepDef.user_enters_username_as(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3077157100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User enters passward as \"abc1234\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "abc1234",
+                  "offset": 25
+                }
+              ],
+              "location": "LoginStepDef.user_enters_passward_as(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3630741800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User clicks on signin button",
+            "match": {
+              "location": "LoginStepDef.user_clicks_on_signin_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "junit.framework.ComparisonFailure: Dashboard page not found expected:\u003c[Dashboard]- iBilling\u003e but was:\u003c[Login ]- iBilling\u003e\r\n\tat junit.framework.Assert.assertEquals(Assert.java:100)\r\n\tat steps.LoginStepDef.user_should_land_on_dashboard_page(LoginStepDef.java:66)\r\n\tat ✽.User should land on dashboard page(classpath:features/Otherlogin.feature:11)\r\n",
+              "duration": 5284900,
+              "status": "failed"
+            },
+            "line": 11,
+            "name": "User should land on dashboard page",
+            "match": {
+              "location": "LoginStepDef.user_should_land_on_dashboard_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@otherlogin"
+          },
+          {
+            "name": "@Scenario"
+          },
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-06-14T18:51:00.037Z",
+        "before": [
+          {
+            "result": {
+              "duration": 5370318900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginStepDef.beforerun()"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "User should be able to login with valid credentials",
+        "description": "",
+        "id": "other-techfios-login-functionality-validation;user-should-be-able-to-login-with-valid-credentials;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 709482100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginStepDef.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 138489600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User is on the Techfios login page",
+            "match": {
+              "location": "LoginStepDef.user_is_on_the_techfios_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3100382200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User enters username as \"demo2@techfios.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "demo2@techfios.com",
+                  "offset": 25
+                }
+              ],
+              "location": "LoginStepDef.user_enters_username_as(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3076451000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User enters passward as \"abc1234\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "abc1234",
+                  "offset": 25
+                }
+              ],
+              "location": "LoginStepDef.user_enters_passward_as(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3673988800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User clicks on signin button",
+            "match": {
+              "location": "LoginStepDef.user_clicks_on_signin_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "junit.framework.ComparisonFailure: Dashboard page not found expected:\u003c[Dashboard]- iBilling\u003e but was:\u003c[Login ]- iBilling\u003e\r\n\tat junit.framework.Assert.assertEquals(Assert.java:100)\r\n\tat steps.LoginStepDef.user_should_land_on_dashboard_page(LoginStepDef.java:66)\r\n\tat ✽.User should land on dashboard page(classpath:features/Otherlogin.feature:11)\r\n",
+              "duration": 18243300,
+              "status": "failed"
+            },
+            "line": 11,
+            "name": "User should land on dashboard page",
+            "match": {
+              "location": "LoginStepDef.user_should_land_on_dashboard_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@otherlogin"
+          },
+          {
+            "name": "@Scenario"
+          },
+          {
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "Other TechFios login functionality validation",
+    "description": "",
+    "id": "other-techfios-login-functionality-validation",
+    "keyword": "Feature",
+    "uri": "classpath:features/Otherlogin.feature",
+    "tags": [
+      {
+        "name": "@otherlogin",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2022-06-14T18:51:16.137Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3328305500,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginStepDef.beforerun()"
+            }
+          }
+        ],
+        "line": 5,
+        "name": "1 User should be able to login with valid credentials",
+        "description": "",
+        "id": "techfios-login-functionality-validation;1-user-should-be-able-to-login-with-valid-credentials",
+        "after": [
+          {
+            "result": {
+              "duration": 1687376800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginStepDef.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 164491500,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User is on the Techfios login page",
+            "match": {
+              "location": "LoginStepDef.user_is_on_the_techfios_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3091268600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User enters username as \"demo@techfios.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "demo@techfios.com",
+                  "offset": 25
+                }
+              ],
+              "location": "LoginStepDef.user_enters_username_as(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3077586300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User enters passward as \"abc123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "abc123",
+                  "offset": 25
+                }
+              ],
+              "location": "LoginStepDef.user_enters_passward_as(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4255960900,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User clicks on signin button",
+            "match": {
+              "location": "LoginStepDef.user_clicks_on_signin_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3185658700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User should land on dashboard page",
+            "match": {
+              "location": "LoginStepDef.user_should_land_on_dashboard_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Loginfeature"
+          },
+          {
+            "name": "@Scenario1"
+          },
+          {
+            "name": "@smoke"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-06-14T18:51:34.937Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2771325100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginStepDef.beforerun()"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "3 User should not be able to login with valid username",
+        "description": "",
+        "id": "techfios-login-functionality-validation;3-user-should-not-be-able-to-login-with-valid-username",
+        "after": [
+          {
+            "result": {
+              "duration": 1104125400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginStepDef.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 161585100,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "User is on the Techfios login page",
+            "match": {
+              "location": "LoginStepDef.user_is_on_the_techfios_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3079377900,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User enters username as \"demo@techfios1.com\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "demo@techfios1.com",
+                  "offset": 25
+                }
+              ],
+              "location": "LoginStepDef.user_enters_username_as(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3084322700,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "User enters passward as \"abc123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "abc123",
+                  "offset": 25
+                }
+              ],
+              "location": "LoginStepDef.user_enters_passward_as(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3467200000,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "User clicks on signin button",
+            "match": {
+              "location": "LoginStepDef.user_clicks_on_signin_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "junit.framework.ComparisonFailure: Dashboard page not found expected:\u003c[Dashboard]- iBilling\u003e but was:\u003c[Login ]- iBilling\u003e\r\n\tat junit.framework.Assert.assertEquals(Assert.java:100)\r\n\tat steps.LoginStepDef.user_should_land_on_dashboard_page(LoginStepDef.java:66)\r\n\tat ✽.User should land on dashboard page(classpath:features/TechFiosLogin.feature:27)\r\n",
+              "duration": 9565800,
+              "status": "failed"
+            },
+            "line": 27,
+            "name": "User should land on dashboard page",
+            "match": {
+              "location": "LoginStepDef.user_should_land_on_dashboard_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Loginfeature"
+          },
+          {
+            "name": "@Scenario3"
+          },
+          {
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "TechFios login functionality validation",
+    "description": "",
+    "id": "techfios-login-functionality-validation",
+    "keyword": "Feature",
+    "uri": "classpath:features/TechFiosLogin.feature",
+    "tags": [
+      {
+        "name": "@Loginfeature",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
+  }
+]
